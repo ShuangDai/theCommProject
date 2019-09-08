@@ -1,0 +1,68 @@
+#select404page {
+  width: 100%; 
+}
+
+.pp-404page-videos:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.pp-404page-videos a {
+  display: block;
+  margin: 0 12px 12px 0;
+  width: 300px;
+  float: left;
+  line-height: 1;
+}
+
+.pp-404page-videos a div {
+  position: relative;
+}
+
+.pp-404page-videos a img {
+  width: 100%;
+  height: auto;
+}
+  
+.pp-404page-videos a div:after {
+  content: '\f236';
+  font-family: dashicons;
+  font-size: 60px;
+  display: block;
+  position: absolute;
+   left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  color: #FF0000;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.pp-404page-videos a:hover div:after, .pp-404page-videos a:focus div:after {
+  opacity: 0.8;
+}
+
+
+/* Some changes for Lity to overlay Admin Bar */
+.lity, .lity-wrap {
+  z-index: 999990;
+}
+.lity-loader {
+  z-index: 999991;
+}
+.lity-container {
+  z-index: 999992;
+}
+.lity-content {
+  z-index: 999993;
+}
+.lity-close {
+  z-index: 999994;
+}
